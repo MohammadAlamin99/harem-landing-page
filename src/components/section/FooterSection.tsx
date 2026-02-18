@@ -14,7 +14,7 @@ export default function FooterSection() {
                             height={32}
                             className="object-contain"
                         />
-                        <span className="text-lg font-medium text-white">Your logo</span>
+                        <span className="text-lg font-medium text-white font-manrope">Your logo</span>
                     </div>
 
                     {/* Navigation */}
@@ -52,8 +52,8 @@ export default function FooterSection() {
                             <a className="hover:opacity-80 transition cursor-pointer">
                                 <Image
                                     src="/images/twitter.png"
-                                    width={22}
-                                    height={22}
+                                    width={24}
+                                    height={24}
                                     alt="Twitter"
                                     className="object-contain"
                                 />
@@ -81,7 +81,7 @@ export default function FooterSection() {
 
                     <p className="mt-2 md:mt-0 font-manrope">
                         Produced by{" "}
-                        <span className="font-semibold text-white">AdminMart</span>.
+                        <span className="font-semibold text-white font-manrope">AdminMart</span>.
                     </p>
                 </div>
             </div>

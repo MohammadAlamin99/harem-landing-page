@@ -26,7 +26,7 @@ export default function CtaSection() {
                             Ready to elevate your salon?
                         </h2>
 
-                        <p className="text-white md:text-[18px] mb-8 max-w-xl">
+                        <p className="text-white md:text-[18px] mb-8 max-w-xl font-manrope">
                             Try it free today – streamline your operations, delight your
                             clients, and grow your business with confidence.
                         </p>

@@ -53,13 +53,13 @@ export default function PlanSection() {
                     <h2 className="text-3xl md:text-4xl font-bold text-[#635BFF] font-manrope leading-tight">
                         Plans for every stage <br /> of your salon
                     </h2>
-                    <p className="mt-4 text-[#526B7A] text-sm md:text-[18px]">
+                    <p className="mt-4 text-[#526B7A] text-sm md:text-[18px] font-manrope">
                         Choose the right tools today and scale effortlessly tomorrow.
                     </p>
                 </div>
 
                 {/* Pricing Cards (ONLY cards animated) */}
-               <PlanCard plans={plans}/>
+                <PlanCard plans={plans} />
             </div>
         </section>
     );

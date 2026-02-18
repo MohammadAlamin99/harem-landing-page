@@ -32,7 +32,7 @@ export default function PlanCard({ plans }: { plans: { name: string; price: numb
 
                         {/* Price */}
                         <div className="mt-6 flex items-end gap-2">
-                            <span className="text-[40px] font-bold text-[#635BFF]">
+                            <span className="text-[40px] font-bold text-[#635BFF] font-manrope">
                                 ${plan.price}
                             </span>
                             <span className="text-[16px] text-[#526B7A] font-manrope mb-1">
@@ -51,7 +51,7 @@ export default function PlanCard({ plans }: { plans: { name: string; price: numb
                                         height={20}
                                         className="inline-block"
                                     />
-                                    <span className="text-sm text-gray-600">{feature}</span>
+                                    <span className="text-sm text-gray-600 font-manrope">{feature}</span>
                                 </li>
                             ))}
                         </ul>
