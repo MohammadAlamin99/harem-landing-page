@@ -283,15 +283,24 @@ export default function PromotionSection() {
                                 <SwiperSlide key={tab.id}>
                                     <button
                                         onClick={() => handleTabClick(index)}
-                                        className={`w-full whitespace-nowrap px-6 py-4 rounded-[12px] text-[14px] md:text-[16px] font-semibold transition-all
-                       duration-300 shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)] cursor-pointer font-manrope
-                      ${active === index
+                                        className={`w-full
+                                                px-6 py-4 
+                                                text-[13px] sm:text-[14px] md:text-[16px]
+                                                leading-tight
+                                                text-center
+                                                rounded-xl font-semibold transition-all duration-300
+                                                shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)] cursor-pointer font-manrope
+                                                whitespace-normal md:whitespace-nowrap
+                                                ${active === index
                                                 ? "bg-[#635BFF] text-white shadow-md"
                                                 : "bg-white text-gray-600 hover:border-indigo-300 hover:bg-gray-50"
                                             }`}
                                     >
                                         {tab.title}
                                     </button>
+
+
+
                                 </SwiperSlide>
                             ))}
                         </Swiper>
