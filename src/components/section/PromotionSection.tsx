@@ -40,7 +40,7 @@ const tabs: Tab[] = [
     {
         id: 1,
         title: "Appointment Manager",
-        image: "/images/image02.svg",
+        image: "/images/img2.png",
         subtitle: "All your appointments, organized in one place",
         description:
             "Manage appointments easily and keep clients informed with smart automation.",
@@ -55,7 +55,7 @@ const tabs: Tab[] = [
     {
         id: 2,
         title: "Client Management",
-        image: "/images/image03.svg",
+        image: "/images/img3.png",
         subtitle: "Know every client. Personalize every experience.",
         description:
             "A powerful customer profile system that helps you track every detail and build loyalty.",
@@ -73,7 +73,7 @@ const tabs: Tab[] = [
     {
         id: 3,
         title: "Team Management",
-        image: "/images/image04.svg",
+        image: "/images/img4.png",
         subtitle: "Empower your team with smart staff management",
         description:
             "Organize schedules, monitor productivity, and control staff performance from one dashboard.",
@@ -90,7 +90,7 @@ const tabs: Tab[] = [
     {
         id: 4,
         title: "Services Management",
-        image: "/images/image05.svg",
+        image: "/images/img5.png",
         subtitle: "Manage every service with total precision",
         description:
             "Control services, categories, pricing, VAT and duration settings — all in one place.",
@@ -105,7 +105,7 @@ const tabs: Tab[] = [
     {
         id: 5,
         title: "Inventory",
-        image: "/images/image06.svg",
+        image: "/images/img6.png",
         subtitle: "Stay stocked, stay profitable",
         description:
             "Track stock in real time, avoid shortages, and reduce waste with smart inventory control.",
@@ -118,7 +118,7 @@ const tabs: Tab[] = [
     {
         id: 6,
         title: "Financial Reporting",
-        image: "/images/image07.svg",
+        image: "/images/finace.png",
         subtitle: "Smart financial tools to keep every transaction under control",
         description:
             "Access full payment details, generate receipts, and keep financial records organized and unified.",
@@ -133,7 +133,7 @@ const tabs: Tab[] = [
     {
         id: 7,
         title: "Budgeting Management",
-        image: "/images/image08.svg",
+        image: "/images/budgetmanagemtn.png",
         subtitle:
             "Take full control of your budget — Clear insights, smarter decisions",
         description:
@@ -151,7 +151,7 @@ const tabs: Tab[] = [
     {
         id: 8,
         title: "Checkout & Receipts",
-        image: "/images/image10.svg",
+        image: "/images/img9.png",
         subtitle: "A faster, frictionless way to get paid",
         description:
             "Create receipts instantly, add services/products quickly, and sync payments with reports.",
@@ -164,7 +164,7 @@ const tabs: Tab[] = [
     {
         id: 9,
         title: "Social Media",
-        image: "/images/image09.svg",
+        image: "/images/img10.png",
         subtitle: "Boost your salon’s online presence",
         description:
             "Plan posts, track analytics, and manage content assets in one platform.",
@@ -177,7 +177,7 @@ const tabs: Tab[] = [
     {
         id: 10,
         title: "Waivers & Files",
-        image: "/images/image11.svg",
+        image: "/images/img11.png",
         subtitle: "Paperwork done — securely, digitally, instantly.",
         description:
             "Collect signatures, store files safely, and access everything anytime.",
@@ -190,7 +190,7 @@ const tabs: Tab[] = [
     {
         id: 11,
         title: "Roles Management",
-        image: "/images/image12.svg",
+        image: "/images/img12.png",
         subtitle: "Manage access with confidence",
         description:
             "Control staff permissions with precision and keep your salon data protected.",
