@@ -74,10 +74,9 @@ export default function HeroSection() {
                     data-aos-delay="450"
                     className="relative w-full max-w-5xl px-2 md:px-0 mt-10"
                 >
-                    {/* Image */}
                     <div className="relative">
                         <Image
-                            src="/images/dashboard.svg"
+                            src="/images/Dashboard.png"
                             alt="Salon Management Dashboard"
                             width={1200}
                             height={750}
