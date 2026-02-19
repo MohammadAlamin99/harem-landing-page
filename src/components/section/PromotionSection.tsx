@@ -23,7 +23,7 @@ const tabs: Tab[] = [
     {
         id: 0,
         title: "Advanced Dashboard",
-        image: "/images/image01.svg",
+        image: "/images/chcekingimage.png",
         subtitle: "Advanced insights at your fingertips",
         description:
             "Instant overview of sales, appointments, clients, and staff activity — all in one place.",
