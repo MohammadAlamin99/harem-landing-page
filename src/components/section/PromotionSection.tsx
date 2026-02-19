@@ -256,7 +256,6 @@ export default function PromotionSection() {
                     data-aos-delay="150"
                     className="relative mt-[17px] px-0 sm:px-12 lg:px-0 flex items-center group"
                 >
-                    {/* Left Arrow */}
                     <button
                         onClick={() => scroll("left")}
                         className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#EEF3F9] border border-gray-200 z-20 cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 shadow-md"
@@ -311,7 +310,6 @@ export default function PromotionSection() {
                         </Swiper>
                     </div>
 
-                    {/* Right Arrow */}
                     <button
                         onClick={() => scroll("right")}
                         className="hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-[#EEF3F9] border border-gray-200 z-20 cursor-pointer absolute right-0 top-1/2 -translate-y-1/2 shadow-md"
