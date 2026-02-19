@@ -202,6 +202,7 @@ const tabs: Tab[] = [
     },
 ];
 
+
 export default function PromotionSection() {
     const [active, setActive] = useState(0);
     const swiperRef = useRef<SwiperType | null>(null);
@@ -238,7 +239,6 @@ export default function PromotionSection() {
     return (
         <section className="w-full md:py-20 py-12 px-6">
             <div className="max-w-7xl mx-auto">
-                {/* Header */}
                 <div data-aos="fade-up" className="text-center mx-auto">
                     <h2 className="text-3xl md:text-[44px] font-manrope leading-12 text-[#29343D] font-bold">
                         Complete Salon Management <br />
