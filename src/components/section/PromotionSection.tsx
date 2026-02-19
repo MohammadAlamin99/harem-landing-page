@@ -227,6 +227,10 @@ export default function PromotionSection() {
 
     const handleTabClick = (index: number) => {
         setActive(index);
+
+        if (swiperRef.current) {
+            swiperRef.current.slideTo(index);
+        }
     };
 
     const activeTab = tabs[active];
@@ -385,3 +389,19 @@ export default function PromotionSection() {
         </section>
     );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
