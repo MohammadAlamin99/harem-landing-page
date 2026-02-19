@@ -236,7 +236,7 @@ export default function PromotionSection() {
     const activeTab = tabs[active];
 
     return (
-        <section className="w-full md:py-20 py-12 px-6 overflow-hidden">
+        <section className="w-full md:py-20 py-12 px-6">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div data-aos="fade-up" className="text-center mx-auto">
@@ -254,7 +254,7 @@ export default function PromotionSection() {
                 <div
                     data-aos="fade-up"
                     data-aos-delay="150"
-                    className="relative mt-12 px-0 sm:px-12 lg:px-0 flex items-center group"
+                    className="relative mt-[17px] px-0 sm:px-12 lg:px-0 flex items-center group"
                 >
                     {/* Left Arrow */}
                     <button
@@ -266,7 +266,7 @@ export default function PromotionSection() {
                     </button>
 
                     {/* Tabs Container */}
-                    <div className="w-full overflow-hidden lg:px-12 px-0">
+                    <div className="w-full lg:px-12 px-0">
                         <Swiper
                             onSwiper={(swiper) => (swiperRef.current = swiper)}
                             spaceBetween={16}
@@ -285,27 +285,28 @@ export default function PromotionSection() {
                         >
                             {tabs.map((tab, index) => (
                                 <SwiperSlide key={tab.id}>
-                                    <button
-                                        onClick={() => handleTabClick(index)}
-                                        className={`w-full
-                                                px-6 py-4 
-                                                text-[13px] sm:text-[14px] md:text-[16px]
-                                                leading-tight
-                                                text-center
-                                                rounded-xl font-semibold transition-all duration-300
-                                                shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)] cursor-pointer font-manrope
-                                                whitespace-normal md:whitespace-nowrap
-                                                ${active === index
-                                                ? "bg-[#635BFF] text-white shadow-md"
-                                                : "bg-white text-gray-600 hover:border-indigo-300 hover:bg-gray-50"
-                                            }`}
-                                    >
-                                        {tab.title}
-                                    </button>
-
-
-
+                                    <div className="py-8">
+                                        <button
+                                            onClick={() => handleTabClick(index)}
+                                            className={`w-full
+                                                    px-6 py-4
+                                                    text-[13px] sm:text-[14px] md:text-[16px]
+                                                    leading-tight
+                                                    text-center
+                                                    rounded-xl font-semibold transition-all duration-300
+                                                    shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)]
+                                                    cursor-pointer font-manrope
+                                                    whitespace-normal md:whitespace-nowrap 
+                                                    ${active === index
+                                                    ? "bg-[#635BFF] text-white"
+                                                    : "bg-white text-gray-600 hover:bg-gray-50"
+                                                }`}
+                                        >
+                                            {tab.title}
+                                        </button>
+                                    </div>
                                 </SwiperSlide>
+
                             ))}
                         </Swiper>
                     </div>
@@ -320,7 +321,7 @@ export default function PromotionSection() {
                     </button>
                 </div>
                 {/* Main Content */}
-                <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Image Preview */}
                     <div
                         key={activeTab.image}
@@ -331,6 +332,8 @@ export default function PromotionSection() {
                             src={activeTab.image}
                             alt={activeTab.title}
                             fill
+                            quality={100}
+                            sizes="(max-width: 768px) 100vw, 50vw"
                             className="object-contain"
                             priority
                         />
@@ -380,12 +383,6 @@ export default function PromotionSection() {
                     </div>
                 </div>
             </div>
-
-            <style jsx>{`
-        :global(.swiper) {
-          overflow: hidden;
-        }
-      `}</style>
         </section>
     );
 }
