@@ -45,7 +45,7 @@ export default function CtaSection() {
                         <div className="relative h-[480px]">
                             {/* Main Dashboard Image */}
                             <Image
-                                src="/images/team-members.jpg"
+                                src="/images/team.svg"
                                 alt="Dashboard preview"
                                 width={300}
                                 height={400}
@@ -62,7 +62,7 @@ export default function CtaSection() {
 
                             {/* Floating Overlay Image */}
                             <Image
-                                src="/images/view_calendar.png"
+                                src="/images/calender.svg"
                                 alt="Analytics panel"
                                 width={400}
                                 height={460}
