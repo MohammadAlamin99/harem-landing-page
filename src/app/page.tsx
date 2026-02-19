@@ -8,6 +8,7 @@ import HeroSection from '@/components/section/HeroSection'
 import ManageSection from '@/components/section/ManageSection'
 import PlanSection from '@/components/section/PlanSection'
 import PromotionSection from '@/components/section/PromotionSection'
+import StateSection from '@/components/section/StateSection'
 import TestimonialSection from '@/components/section/TestimonialSection'
 
 export default function page() {
@@ -15,6 +16,7 @@ export default function page() {
     <>
       <HeaderSection />
       <HeroSection />
+      <StateSection />
       <PromotionSection />
       <PlanSection />
       <FeaturesSection />
