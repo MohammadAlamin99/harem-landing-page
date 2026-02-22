@@ -328,7 +328,7 @@ export default function PromotionSection() {
                                 768: { slidesPerView: 3 },
                                 900: { slidesPerView: 3 },
                                 1024: { slidesPerView: 4 },
-                                // 1260: { slidesPerView: 5 },
+                                1260: { slidesPerView: 5 },
                             }}
                             className="py-2"
                         >
@@ -338,8 +338,8 @@ export default function PromotionSection() {
                                         <button
                                             onClick={() => handleTabClick(index)}
                                             className={`w-full
-                                                    px-6 py-4 flex items-center shrink-0 gap-2
-                                                    text-[13px] sm:text-[14px] md:text-[16px]
+                                                    px-3 py-4 flex items-center shrink-0 gap-2
+                                                    text-[13px] sm:text-[14px] md:text-[15px]
                                                     leading-tight text-start
                                                     rounded-xl font-semibold transition-all duration-300
                                                     shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)]
