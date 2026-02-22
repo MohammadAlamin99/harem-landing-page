@@ -9,6 +9,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import type { Swiper as SwiperType } from "swiper";
+import IDashboard from "../svg/IDashboar";
+import INIdashboard from "../svg/INIdashboard";
+import ICalander from "../svg/ICalander";
+import INICalander from "../svg/INICalander";
+import IClient from "../svg/IClient";
+import INIClient from "../svg/INIClient";
+import IUserGroup from "../svg/IUserGroup";
+import IUserGroupDark from "../svg/IUserGroupDark";
+import IBookOpen from "../svg/IBookOpen";
+import IBookOpenDark from "./IBookOpenDark";
+import IGlobeNetwork from "../svg/IGlobeNetwork";
+import IGlobeNetworkDark from "../svg/IGlobeNetworkDark";
+import IInfoCircle from "../svg/IInfoCircle";
+import IInfoCircleWhite from "../svg/IInfoCircleWhite";
+import IWalletIcon from "../svg/IWalletIcon";
+import IWalletIconDark from "../svg/IWalletIconDark";
+import ConcentricIcon from "../svg/ConcentricIcon";
+import ConcentricIconWhite from "../svg/ConcentricIconWhite";
+import IFileICon from "../svg/IFileICon";
+import IfileIconwhite from "../svg/IfileIconwhite";
+import IRoleicon from "../svg/IRoleicon";
+import IRoleDark from "./IRoleDark";
+import Recipticon from "../svg/Recipticon";
+import ReciptIconiconWhite from "../svg/ReciptIconiconWhite";
 
 interface Tab {
     id: number;
@@ -17,6 +41,8 @@ interface Tab {
     subtitle: string;
     description: string;
     features: string[];
+    activeIcon: React.ReactNode;
+    inactiveIcon: React.ReactNode;
 }
 
 const tabs: Tab[] = [
@@ -36,6 +62,8 @@ const tabs: Tab[] = [
             "Appointment performance charts comparing completed vs. canceled visits.",
             "Smart agenda view with full client details and quick actions.",
         ],
+        activeIcon: <IDashboard />,
+        inactiveIcon: <INIdashboard />,
     },
     {
         id: 1,
@@ -51,6 +79,8 @@ const tabs: Tab[] = [
             "Automate messages across WhatsApp, email, and phone — confirmations, reminders, follow-ups, and rebooking prompts.",
             "Track performance with detailed metrics on revenue, appointments, staff productivity, and service demand.",
         ],
+        activeIcon: <ICalander />,
+        inactiveIcon: <INICalander />,
     },
     {
         id: 2,
@@ -69,6 +99,8 @@ const tabs: Tab[] = [
             "Keep essential health information secure and accessible to ensure safe, personalized services.",
             "Review every message, reminder, and interaction — full transparency with every client touchpoint.",
         ],
+        activeIcon: <IClient />,
+        inactiveIcon: <INIClient />,
     },
     {
         id: 3,
@@ -86,6 +118,8 @@ const tabs: Tab[] = [
             "Define clear access levels for stylists, managers, and admins to keep operations secure.",
             "Upload and manage photos, client results, and visual documentation for each team member.",
         ],
+        activeIcon: <IUserGroup />,
+        inactiveIcon: <IUserGroupDark />,
     },
     {
         id: 4,
@@ -101,6 +135,8 @@ const tabs: Tab[] = [
             "Add new services instantly with a single click for quick expansion.",
             "Clear duration & post-break settings to optimize scheduling and prevent overbooking.",
         ],
+        activeIcon: <IBookOpen />,
+        inactiveIcon: <IBookOpenDark />,
     },
     {
         id: 5,
@@ -114,6 +150,8 @@ const tabs: Tab[] = [
             "Automatic low-stock alerts to prevent service interruptions.",
             "Smart purchase insights to avoid overspending and product waste.",
         ],
+        activeIcon: <IGlobeNetwork />,
+        inactiveIcon: <IGlobeNetworkDark />,
     },
     {
         id: 6,
@@ -129,6 +167,8 @@ const tabs: Tab[] = [
             "Set up automated delivery of digital receipts via email, WhatsApp, or text message — ensuring clients receive confirmations instantly without manual work.",
             "Create, customize, and track gift cards with unique codes, balance monitoring, expiration rules, and usage history — all integrated directly into the payment workflow.",
         ],
+        activeIcon: <IInfoCircleWhite />,
+        inactiveIcon: <IInfoCircle />,
     },
     {
         id: 7,
@@ -147,6 +187,8 @@ const tabs: Tab[] = [
             "Track and manage expenses by payment method and understand where each transaction comes from.",
             "Access smart financial analytics with spending trends and detailed breakdowns by macro-categories, categories, and suppliers — all in one place.",
         ],
+        activeIcon: <IWalletIcon />,
+        inactiveIcon: <IWalletIconDark />,
     },
     {
         id: 8,
@@ -160,6 +202,8 @@ const tabs: Tab[] = [
             "Add services, tips, and products in seconds.",
             "Sync every sale with your reports and budgeting dashboard.",
         ],
+        activeIcon: <ReciptIconiconWhite />,
+        inactiveIcon: <Recipticon />,
     },
     {
         id: 9,
@@ -173,6 +217,8 @@ const tabs: Tab[] = [
             "Track detailed performance metrics to understand what’s working and grow your salon’s online engagement.",
             "Store and organize all your photos, videos, and creative assets in one place to post faster and easier.",
         ],
+        activeIcon: <ConcentricIconWhite />,
+        inactiveIcon: <ConcentricIcon />,
     },
     {
         id: 10,
@@ -186,6 +232,8 @@ const tabs: Tab[] = [
             "Store files in one secure place.",
             "Access anytime, from any device, without digging through folders.",
         ],
+        activeIcon: <IfileIconwhite />,
+        inactiveIcon: <IFileICon />,
     },
     {
         id: 11,
@@ -199,6 +247,8 @@ const tabs: Tab[] = [
             "Manage permissions with precision to keep financial, client, and operational data secure.",
             "Control access levels across your entire platform with flexible, salon-friendly permission settings.",
         ],
+        activeIcon: <IRoleicon />,
+        inactiveIcon: <IRoleDark />,
     },
 ];
 
@@ -278,7 +328,7 @@ export default function PromotionSection() {
                                 768: { slidesPerView: 3 },
                                 900: { slidesPerView: 3 },
                                 1024: { slidesPerView: 4 },
-                                1260: { slidesPerView: 5 },
+                                // 1260: { slidesPerView: 5 },
                             }}
                             className="py-2"
                         >
@@ -288,20 +338,19 @@ export default function PromotionSection() {
                                         <button
                                             onClick={() => handleTabClick(index)}
                                             className={`w-full
-                                                    px-6 py-4
+                                                    px-6 py-4 flex items-center shrink-0 gap-2
                                                     text-[13px] sm:text-[14px] md:text-[16px]
-                                                    leading-tight
-                                                    text-center
+                                                    leading-tight text-start
                                                     rounded-xl font-semibold transition-all duration-300
                                                     shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)]
-                                                    cursor-pointer font-manrope
-                                                    whitespace-normal md:whitespace-nowrap 
+                                                    cursor-pointer font-manrope 
                                                     ${active === index
                                                     ? "bg-[#635BFF] text-white"
-                                                    : "bg-white text-gray-600 hover:bg-gray-50"
+                                                    : "bg-white text-[#29343D] hover:bg-gray-50"
                                                 }`}
                                         >
-                                            {tab.title}
+                                            <span>{active === index ? tab.activeIcon : tab.inactiveIcon}</span>
+                                            <span>{tab.title}</span>
                                         </button>
                                     </div>
                                 </SwiperSlide>
@@ -364,8 +413,7 @@ export default function PromotionSection() {
                                         <p className="text-[#29343D] font-semibold font-manrope text-sm md:text-[16px]">
                                             {item}
                                         </p>
-                                        <hr className="mt-5" />
-                                        <div className="border-b border-gray-100" />
+                                        <hr className="mt-5 border-[#E0E6EB]" />
                                     </div>
                                 </li>
                             ))}
