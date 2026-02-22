@@ -339,7 +339,7 @@ export default function PromotionSection() {
                                             onClick={() => handleTabClick(index)}
                                             className={`w-full
                                                     px-3 py-4 flex items-center shrink-0 gap-2
-                                                    text-[13px] sm:text-[14px] md:text-[15px]
+                                                    text-[13px] sm:text-[14px] md:text-[14px]
                                                     leading-tight text-start
                                                     rounded-xl font-semibold transition-all duration-300
                                                     shadow-[0_24px_24px_-12px_rgba(0,0,0,0.05)]
